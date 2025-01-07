@@ -1,0 +1,4 @@
+New "Line.line1" geometry=3wire Seasons=1 Ratings=[0,] normamps=0 emergamps=0 length=2000 units=ft bus1=sourcebus bus2=n2
+New "Line.line2" bus1=n3 bus2=n4 geometry=4wire Seasons=1 Ratings=[0,] normamps=0 emergamps=0 length=2500 units=ft
+New "Line.line3" bus1=n4 bus2=n5 geometry=4wire Seasons=1 Ratings=[0,] normamps=0 emergamps=0 length=1000 units=ft
+New "Line.line4" bus1=n5 bus2=n6 geometry=4wire Seasons=1 Ratings=[0,] normamps=0 emergamps=0 length=1000 units=ft

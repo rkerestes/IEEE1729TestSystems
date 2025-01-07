@@ -1,0 +1,2 @@
+New "Load.load1" phases=3 bus1=n4 conn=wye kV=4.16 kW=5400 pf=0.9 model=1 Vminpu=0.75
+New "Load.load2" phases=3 bus1=n6 conn=wye kV=4.16 kW=600 pf=0.9 model=1 Vminpu=0.7

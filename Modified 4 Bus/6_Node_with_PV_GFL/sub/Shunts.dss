@@ -1,0 +1,1 @@
+New "PVSystem.pv1" phases=3 conn=delta bus1=PVbus kv=0.48 kVA=360 Pmpp=360 irradiance=1 Temperature=22 pf=0.95 %R=50 %X=50 Vminpu=0.7 Kp=0.08 kVDC=0.7 PITol=0.1 daily=irrad

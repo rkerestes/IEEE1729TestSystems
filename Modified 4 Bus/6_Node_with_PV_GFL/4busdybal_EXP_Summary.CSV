@@ -1,0 +1,2 @@
+DateTime, CaseName, Status, Mode, Number, LoadMult, NumDevices, NumBuses, NumNodes, Iterations, ControlMode, ControlIterations, MostIterationsDone, Year, Hour, MaxPuVoltage, MinPuVoltage, TotalMW, TotalMvar, MWLosses, pctLosses, MvarLosses, Frequency
+"1/7/2025 5:47:25 PM", 4busdybal, SOLVED, DYnamic, 100,    1.000, 15, 7, 21, 2, TIME, 1, 2, 0, 10, 0.99997, 0.76243, 6.38897, 4.74292, 0.680952, 10.66, 1.83699, 60
