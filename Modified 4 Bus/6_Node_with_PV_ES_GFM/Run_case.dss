@@ -1,0 +1,53 @@
+/*
+====================================================================
+In this application scenario, opening a breaker between
+Buses 3 and 4 isolates the loads, the PV system, and the BESS
+from the grid, effectively creating a microgrid configuration. In
+this setup, the BESS operates in grid-forming mode, providing
+voltage and frequency references for the microgrid. In contrast,
+the PV system operates in grid-following mode, injecting
+power based on available solar generation. During the islanded
+condition, the system can be energized with the BESS and PV
+as primary power sources.
+====================================================================
+
+Davis Montenegro and Robert Kerestes
+
+2024
+
+*/
+
+
+! Comment out the line below if running from OpenDSS-G 
+!Compile master.dss
+
+! Forces the PV to deliver power only until reaching the 95% of the nominal voltage at its terminals  
+pvsystem.pv1.safevoltage=0.9
+solve
+
+! Opens the switch between buses n3 and n4 
+open line.line2 terminal=1
+solve
+
+! Sets the BESS to operate in GFM mode
+edit storage.mystorage State = Discharging ControlMode = GFM  SafeVoltage=0
+
+set mode=dynamics maxiterations=50 number=200 time=(10,0)
+set loadshapeclass=daily
+
+solve
+
+
+! Use the plot routines below to plot the monitors using DSSView from stand alone DSS 
+/*
+
+! Export monitors
+export monitors all
+
+! active power output
+plot monitor object=myPVPQ channels=(1,3, 5)
+! Voltages at the PV Point of connection
+plot monitor object=myPVVolt channels=(1,3, 5)
+! Currents at the PV Point of connection
+plot monitor object=myPVVolt channels=(7,9, 11)
+*/

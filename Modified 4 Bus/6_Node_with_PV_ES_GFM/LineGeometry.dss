@@ -1,0 +1,17 @@
+New "LineGeometry.3wire"
+~ nconds=3
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=conductor X=-4 h=28 units=ft
+~ Cond=2 wire=conductor X=-1.5 h=28 units=ft
+~ Cond=3 wire=conductor X=3 h=28 units=ft
+
+New "LineGeometry.4wire"
+~ nconds=4
+~ nphases=3
+~ Reduce=Yes
+~ Cond=1 wire=conductor X=-4 h=28 units=ft
+~ Cond=2 wire=conductor X=-1.5 h=28 units=ft
+~ Cond=3 wire=conductor X=3 h=28 units=ft
+~ Cond=4 wire=neutral X=0 h=24 units=ft
+

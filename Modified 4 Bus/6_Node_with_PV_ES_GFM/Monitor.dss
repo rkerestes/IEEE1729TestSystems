@@ -1,0 +1,6 @@
+New "Monitor.mypv" element=pvsystem.pv1 mode=3 terminal=1 PPolar=yes residual=no VIPolar=yes
+New "Monitor.mypvvolt" element=pvsystem.pv1 mode=0 terminal=1 PPolar=yes residual=no VIPolar=yes
+New "Monitor.mypvpq" element=pvsystem.pv1 mode=1 terminal=1 PPolar=no residual=no VIPolar=yes
+New "Monitor.stomonitor" element=storage.mystorage mode=1 terminal=1 PPolar=no residual=no VIPolar=yes
+New "Monitor.stovi" element=storage.mystorage mode=0 terminal=1
+New "Monitor.stostatevars" element=storage.mystorage mode=3 terminal=1

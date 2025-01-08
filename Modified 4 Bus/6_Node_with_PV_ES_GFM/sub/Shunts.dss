@@ -1,0 +1,2 @@
+New "PVSystem.pv1" phases=3 conn=delta bus1=PVbus kv=0.48 kVA=360 Pmpp=360 irradiance=1 Temperature=22 pf=0.95 %R=50 %X=50 Vminpu=0.7 Kp=0.08 kVDC=0.7 PITol=0.1 daily=irrad
+New "Storage.mystorage" phases=3 conn=delta bus1=StoBus kv=0.48 kVA=1000 kWrated=800 kWhrated=6000 %stored=100 %reserve=20 %EffCharge=90 %EffDischarge=90 %IdlingkW=1 %R=50 %X=50 State=IDLING Kp=0.3 kVDC=0.7 PITol=0.1
